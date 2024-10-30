@@ -1,6 +1,6 @@
-# Proyecto - Java con Pruebas para Autograding
+# Proyecto - Lista de Contactos
 
-Plantilla básica para proyecto de Java con Autograding
+
 
 ## Diagrama de clases
 [Editor en línea](https://mermaid.live/)
