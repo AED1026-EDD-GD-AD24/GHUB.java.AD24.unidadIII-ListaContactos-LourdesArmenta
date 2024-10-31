@@ -4,4 +4,5 @@
 ./miPrincipal/Contacto.java
 ./miPrincipal/ListaDeContactos.java
 ./miPrincipal/Principal.java
+./miPrincipal/ClienteMain.java
 ./miTest/AppTest.java

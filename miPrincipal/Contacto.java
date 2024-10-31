@@ -97,6 +97,12 @@ public class Contacto{
     public void setCelular(String celular) {
         this.celular = celular;
     }
+
+    @Override
+    public String toString() {
+        return "Contacto [nombres=" + nombres + ", apellidos=" + apellidos + ", direccion=" + direccion + ", correo="
+                + correo + ", telefono=" + telefono + ", celular=" + celular + "]";
+    }
     
     
 }
