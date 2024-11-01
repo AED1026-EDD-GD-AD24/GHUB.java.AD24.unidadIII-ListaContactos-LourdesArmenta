@@ -115,19 +115,22 @@ public class Lista <T>{
     }
 
     public void remover(int pos) throws PosicionIlegalException{
-        if(pos>0 && pos<tamanio){
+        if(pos>=0 && pos<tamanio){
             if (pos==0){
                 //el Nodo a eliminar esta al principio de la lista
                 cabeza = cabeza.getSiguiente();
                 tamanio--;
             }
-            Nodo<T> aux = cabeza;
-            for(int i=0;i<=pos-2;i++){
-                aux = aux.getSiguiente();
+            else{
+                Nodo<T> aux = cabeza;
+                for(int i=0;i<=pos-2;i++){
+                    aux = aux.getSiguiente();
+                }
+                Nodo<T> prox = aux.getSiguiente();
+                aux.setSiguiente(prox.getSiguiente());
+                tamanio--;
             }
-            Nodo<T> prox = aux.getSiguiente();
-            aux.setSiguiente(prox.getSiguiente());
-            tamanio--;
+        
 
 
         }
